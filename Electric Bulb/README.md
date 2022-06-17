@@ -1,6 +1,6 @@
 ## Electric Bulb ( On | Off ) : Html, CSS ( ` Tailwind Css ` ) and JavaScript 
 
-### Demo Link : [Go]("https://sm8uti.github.io/Javascript-Projects/Electric%20Bulb/Light.html")
+### Demo Link : [Go](https://sm8uti.github.io/Javascript-Projects/Electric%20Bulb/Light.html)
 
 ## Screenshots :
 
