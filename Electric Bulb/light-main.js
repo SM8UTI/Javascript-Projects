@@ -9,7 +9,7 @@ btn.addEventListener("click",function(){
     }
     else{
         btn.textContent = "ON";
-        imgBtn.src="Images/OFF.png";
+        imgBtn.src="Images/Off.png";
     }
 });
 
