@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+:root {
+  --back:#112031;
+  --text:#D4ECDD;
+  --con:#345B63;
+  --roboto:"Roboto Condensed",sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  font-family: var(--roboto);
+  background-color: var(--back);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: var(--con);
+  border-radius: 5px;
+  width: 310px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.container .tip {
+  margin: 1rem 0;
+}
+.container .billTotal, .container .tip {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.container .text {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.container .input {
+  position: relative;
+  color: var(--text);
+  font-weight: 700;
+}
+.container .input span {
+  font-size: 3rem;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.container .input input {
+  color: var(--text);
+  font-size: 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--back);
+  padding: 1rem 1rem 1rem 3.5rem;
+}
+.container .people {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  font-weight: 700;
+}
+.container .people_text {
+  font-size: 2rem;
+}
+.container .people .btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  aspect-ratio: 1/1;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50px;
+  flex-wrap: nowrap;
+  transition: all 350ms ease-in-out;
+}
+.container .people .btn:hover {
+  background-color: var(--back);
+  color: var(--text);
+}
+.container .total {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.container .total h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.container .total h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}/*# sourceMappingURL=TipsCalc.css.map */
