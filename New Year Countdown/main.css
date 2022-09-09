@@ -1,0 +1,100 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+  background-color: #ffe66b;
+}
+
+h1, h2, p {
+  font-size: 1rem;
+  color: #222222;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container_text h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.container_countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_countdown li {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 0.3rem;
+}
+
+.container_countdown li h2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.container_countdown li p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 610px) {
+  .container_countdown {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4rem;
+  }
+  .container_countdown li h2 {
+    font-size: 14rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
