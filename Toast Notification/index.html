@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <style>
+        .msg-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            transition: all ease-in-out 500ms;
+        }
+
+        .toast {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 1rem;
+            border-left: 4px solid rgb(130, 243, 38);
+            padding: 1rem;
+            color: rgb(130, 243, 38);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button id="btn"> Submit </button>
+        <div class="msg-container">
+
+        </div>
+    </main>
+    <script>
+        const btn = document.getElementById('btn');
+        const box = document.querySelector('.msg-container')
+        btn.addEventListener("click", () => {
+            const notification = document.createElement('div');
+            notification.classList.add('toast')
+
+            notification.innerText = "File Upload Sucessfully!"
+
+            box.appendChild(notification)
+            setTimeout(() => {
+                notification.remove()
+
+            }, 3000)
+
+        })
+    </script>
+</body>
+
+</html>
