@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter App</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main>
+        <div class="textArea">
+            <textarea name="text" id="textAreaInput" placeholder="Write Something ....."></textarea>
+        </div>
+        <div class="textAreaData">
+            <h1>Word Counter</h1>
+            <div class="data data-1">
+                <h3>Total Words : </h3>
+                <span id="dataAns1">000</span>
+            </div>
+            <div class="data data-2">
+                <h3>Total Characters : </h3>
+                <span id="dataAns2">000</span>
+            </div>
+
+            <div class="copyright">
+                💙 Made by <a href="https://github.com/SM8UTI">Sm8uti</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener("load", () => {
+            const input = document.getElementById("textAreaInput")
+
+            input.addEventListener("keyup",()=>{
+                let arr = input.value.trim().split(" ");
+                document.getElementById("dataAns2").innerText = arr.join("").length;
+                document.getElementById("dataAns1").innerText = arr.length;
+            })
+        })
+    </script>
+</body>
+
+</html>
