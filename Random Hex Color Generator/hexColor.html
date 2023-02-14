@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Color Generator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-color: rgb(100, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        #randomColorBtn {
+            background-color: #121212;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        p {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="randomColorBtn">
+        Random Hex Color Generator
+    </button>
+    <p>
+        value
+    </p>
+    <script>
+        function randomColor() {
+            let hexValues = "0123456789ABCDEF";
+            let colorCode = "#";
+            for(let i = 0;i<6;i++){
+                colorCode += hexValues[Math.floor(Math.random() * 16)];
+            }
+
+            return colorCode;
+        }
+
+        window.addEventListener("load", () => {
+            document.getElementById("randomColorBtn").addEventListener("click", () => {
+                let colorValue= randomColor();
+                document.body.style.backgroundColor = colorValue;
+                document.querySelector("p").innerText = colorValue;
+            })
+        })
+    </script>
+</body>
+
+</html>
