@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Webapp | Sm8uti</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="max">
+        <div class="header">
+            <div class="logo">
+                <span>Weather</span>
+            </div>
+            <div class="inputSearch">
+                <input type="text" name="search" id="search" placeholder="Search Place Name">
+                <button id="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
+                            fill="white" />
+                        <path d="M20 20L18 18" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="max">
+        <div class="mainText">
+            <div class="mainTextDetails">
+                <div>
+                    <h1>21</h1>
+                    <span>C</span>
+                </div>
+                <div>
+                    <h2>Bhubaneswar</h2>
+                    <h3>Tue Feb 21 2023</h3>
+                </div>
+            </div>
+            <div class="mainTextImg">
+                <img src="http://cdn.weatherapi.com/weather/64x64/day/122.png" alt="">
+                <h3>Overcast</h3>
+            </div>
+        </div>
+
+        <div class="mainList">
+            <div class="mainListItems mainListItems1">
+                <ul>
+                    <li>
+                        <h3>Country Name</h3>
+                        <h4 id="country">India</h4>
+                    </li>
+                    <li>
+                        <h3>Region</h3>
+                        <h4 id="region">Odisha</h4>
+                    </li>
+                    <li>
+                        <h3>Time Zone</h3>
+                        <h4 id="timezone">Kollakata</h4>
+                    </li>
+                    <li>
+                        <h3>Cloudy</h3>
+                        <h4 id="cloudy">86%</h4>
+                    </li>
+                    <li>
+                        <h3>Humidity</h3>
+                        <h4 id="humidity">65%</h4>
+                    </li>
+                    <li>
+                        <h3>Wind</h3>
+                        <h4 id="wind">8km/h</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>Made by 💙 <a href="https://github.com/SM8UTI">Sm8uti</a></h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
