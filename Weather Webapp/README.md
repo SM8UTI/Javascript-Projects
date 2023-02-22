@@ -4,5 +4,5 @@
 
 ### ScreenShots : 
 
-![output](./output.png);
+![output](./output.png)
 
