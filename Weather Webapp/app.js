@@ -11,7 +11,7 @@ let searchBtn = document.getElementById("searchBtn");
 
 
 const SearchValueAPI = (inputValue) =>{
-    return `http://api.weatherapi.com/v1/forecast.json?key=77f064492296495fa03130641231802&q=${inputValue}&days=8&aqi=no&alerts=no`;
+    return `https://api.weatherapi.com/v1/forecast.json?key=77f064492296495fa03130641231802&q=${inputValue}&days=8&aqi=no&alerts=no`;
 }
 
 const image_URL = (inputValue) =>{
